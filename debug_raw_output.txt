@@ -1,0 +1,111 @@
+{
+  "personal_info": {
+    "name": "Quadri Ismail",
+    "headline": "Product Designer · Fintech & B2B SaaS · AI-Native Products · Design Systems · Remote",
+    "location": "Lagos State, Nigeria",
+    "contact": {
+      "email": "quadrihorlar@gmail.com",
+      "linkedin": "www.linkedin.com/in/quadriismail",
+      "portfolio": "behance.net/quadriismail"
+    }
+  },
+  "summary": "Most designers work in one domain long enough to get comfortable. I have shipped products across Fintech, GovTech, Healthcare, and AI-powered SaaS — on platforms used by millions of people worldwide. I work fully remote with distributed teams and founders across Nigeria, Saudi Arabia, and international startups. I cover the full arc: early discovery, user research, design systems, prototyping, and production handoff. I use AI-assisted workflows with Claude and Cursor to move faster without losing craft. Work I have contributed to: → Ryno Finance: 0 to 1 B2B financial platform, KYC and KYB onboarding → Lean Business Services: AI analytics and medical coding SaaS → Chisquares: global research analytics platform → Federal Ministry of Education Nigeria: performance system for 67,000+ civil servants. Results shipped: ✦ Cut design-to-dev handoff time by 15% with a unified design system ✦ Reduced user errors by 70% on a blockchain onboarding flow ✦ Sped up approval workflows by 80% on a national government platform ✦ Lifted engagement and retention by 30% on an AI research platform. Outside client work, I mentor product designers from African and emerging markets on turning their skills into steady income. Open to full-time and contract Product Design roles, fully remote.",
+  "skills_and_tools": [
+    "UE",
+    "UG",
+    "Design Leadership",
+    "Figma",
+    "FigJam",
+    "ProtoPie",
+    "Miro",
+    "Notion",
+    "Jira",
+    "Cursor",
+    "Claude"
+  ],
+  "languages": [
+    "English (Native or Bilingual)",
+    "German (Elementary)",
+    "English (Full Professional)",
+    "Arabic (Limited Working)"
+  ],
+  "certifications": [
+    "Start the UX Design Process: Empathize, Define, and Ideate",
+    "Learning AI Through Visualization",
+    "Generative AI: Introduction and Applications",
+    "McKinsey.org Forward Program",
+    "Digital Skills for Entrepreneurs (DSE) Training"
+  ],
+  "experience": [
+    {
+      "company": "Ryno",
+      "role": "Founding Product Designer | Engineer",
+      "duration": "December 2024 - Present (1 year 9 months)",
+      "location": "Edmonton, AB",
+      "description": "Owned design end‑to‑end for rynopay®, a multi‑portal cross‑border payments platform, from research and information architecture to production‑ready code using Claude Code, Figma CLI / MCP, and Cursor.",
+      "highlights": [
+        "Designed three portals (Customer Wallet, Partner Merchant Console, Compliance Ops) for a 0‑to‑1 cross‑border payments platform, all composed from a single design system.",
+        "Shipped typed React components prototyped in code with Claude Code and Cursor, collapsing the design‑to‑engineering loop from days to hours alongside a 5‑person team.",
+        "Owned account security UX end‑to‑end: KYC and KYB onboarding, MFA with authenticator apps and backup codes, and profiles built around trust signals.",
+        "Delivered compliance tooling (Treasury, Suspense Queue, Webhook Monitoring) designed around exception paths.",
+        "Set design QA standards and automated design token generation with Claude, cutting manual UI hours."
+      ]
+    },
+    {
+      "company": "Linqart",
+      "role": "Product Designer",
+      "duration": "April 2025 - June 2026 (1 year 3 months)",
+      "location": "London Area, United Kingdom",
+      "description": "Led product design for Linqart, an all‑in‑one e‑commerce product, on contract through Neoclan Technologies.",
+      "highlights": [
+        "Designed interfaces serving consumer needs from electronics to home goods.",
+        "Collaborated across teams to launch a service provider marketplace connecting users with verified professionals.",
+        "Integrated doorstep delivery and flexible payment options to reduce purchase friction."
+      ]
+    },
+    {
+      "company": "Lean Business Services",
+      "role": "Senior Product Designer",
+      "duration": "December 2024 - April 2026 (1 year 5 months)",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Designed for two enterprise SaaS platforms: Lean Insight (AI analytics & data governance) and AXN Terminology Engine (AI‑powered medical coding).",
+      "highlights": [
+        "Delivered the AXN design system end‑to‑end, now the standard library for all new AXN screens.",
+        "Cut design‑to‑development handoff time by 15% through structured component documentation.",
+        "Reduced design revisions by 20% by aligning stakeholder expectations earlier in the process."
+      ]
+    },
+    {
+      "company": "Federal Ministry Of Education, Nigeria",
+      "role": "Senior Product Designer",
+      "duration": "July 2025 - September 2025 (3 months)",
+      "location": null,
+      "description": "Led design for Nigeria's first digital Performance Management System serving 67,000+ federal employees.",
+      "highlights": [
+        "Built information architecture supporting dynamic roles and real‑time performance tracking.",
+        "Designed modular dashboards for Super Admins, Heads of Service, and Officers that sped up approval workflows by 80%.",
+        "Optimized for low‑bandwidth environments and nationwide accessibility, aligning UX decisions with civil service regulations and data privacy requirements."
+      ]
+    },
+    {
+      "company": "Sparkr Digitals",
+      "role": "Product Team Manager",
+      "duration": "September 2023 - September 2025 (2 years 1 month)",
+      "location": "Lagos State, Nigeria",
+      "description": "Led product design operations at Sparkr Digitals, an agency delivering digital products for African startups and businesses.",
+      "highlights": [
+        "Managed a cross‑functional design team across concurrent fintech, tech, and consumer engagements.",
+        "Oversaw end‑to‑end delivery from discovery to final handoff across web and mobile.",
+        "Set up design workflows and documentation practices that improved team consistency.",
+        "Mentored junior designers on UX research, UI execution, and stakeholder communication."
+      ]
+    },
+    {
+      "company": "Chisquares",
+      "role": "Senior Product Designer",
+      "duration": "March 2023 - February 2025 (2 years)",
+      "location": "United States",
+      "description": "Led end‑to‑end product design for a research analytics and collaboration platform used worldwide.",
+      "highlights": [
+        "Built a unified design system across web and mobile, standardizing components and speeding up feature delivery.",
+        "Designed survey

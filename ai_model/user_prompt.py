@@ -1,0 +1,6 @@
+user_prompt = """
+        "Answer the following question from a portfolio visitor. "
+        "Remember to strictly use the provided JSON data, keep the answer concise, "
+        "and format your final response entirely in Markdown.\n\n"
+        f"Visitor Question: \"{raw_input}\""
+"""

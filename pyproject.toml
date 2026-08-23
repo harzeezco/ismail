@@ -1,0 +1,20 @@
+[project]
+name = "ismail"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cachetools>=7.1.7",
+    "dotenv>=0.9.9",
+    "fastapi[standard]>=0.141.1",
+    "groq>=1.6.0",
+    "ollama>=0.6.2",
+    "openai>=3.1.0",
+    "pydantic>=2.13.4",
+    "pymupdf>=1.28.2",
+    "pymupdf4llm>=1.28.2",
+    "python-dateutil>=2.9.0.post0",
+    "redis>=8.1.0",
+    "supabase>=2.31.0",
+]
