@@ -27,8 +27,8 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://aesthetic-tiramisu-feb2c3.netlify.app",
-                   "https://aesthetic-tiramisu-feb2c3.netlify.app/, https://quadriismail.com", "https://quadriismail.com/"],
+    allow_origins=["http://localhost:3000",
+                   "https://aesthetic-tiramisu-feb2c3.netlify.app, https://quadriismail.com", "https://quadriismail.com/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
