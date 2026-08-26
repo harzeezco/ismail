@@ -1,3 +1,7 @@
+from ollama import AsyncClient # <-- IMPORTANT: Import the Async client
+from fastapi.concurrency import run_in_threadpool
+from fastapi import Depends, Response
+import os
 from pydantic import BaseModel
 from fastapi import Response, HTTPException, Depends
 from fastapi.responses import StreamingResponse
@@ -17,6 +21,13 @@ import json
 
 class Prompt(BaseModel):
     prompt: str
+
+
+# Initialize the cloud client outside the function so it can be reused
+ollama_cloud_client = AsyncClient(
+    host="https://ollama.com",
+    headers={'Authorization': f"Bearer {os.environ.get('OLLAMA_API_KEY')}"}
+)
 
 
 async def read_prompt(
@@ -53,8 +64,8 @@ async def read_prompt(
     async def event_generator():
         full_reply = ""
         try:
-            # 1. Trigger Ollama stream
-            response = ollama.chat(
+            # 1. Trigger Ollama stream using the AsyncCloudClient
+            response = await ollama_cloud_client.chat(
                 model="gpt-oss:20b-cloud",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -64,9 +75,9 @@ async def read_prompt(
                 options={"temperature": 0.7, "keep_alive": "60m"},
                 stream=True
             )
-            
-            # 2. Iterate through stream chunks properly
-            for chunk in response:
+
+            # 2. Iterate through stream chunks asynchronously
+            async for chunk in response:
                 token = chunk.get("message", {}).get("content", "")
                 if token:
                     full_reply += token
@@ -89,14 +100,12 @@ async def read_prompt(
                         "content": full_reply
                     }
                 ]).execute()
-                
+
             await run_in_threadpool(_insert)
             yield "data: [DONE]\n\n"
 
-        except APIError as db_error:
-            print(f"Database API Error: {db_error.message}")
-            yield f"data: {json.dumps({'error': db_error.message})}\n\n"
         except Exception as e:
+            # If Ollama fails, or DB fails, it gets caught and streamed here
             print(f"CRITICAL ERROR: {str(e)}")
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
