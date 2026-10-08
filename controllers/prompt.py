@@ -18,17 +18,14 @@ from utils.get_redis_message_context import get_redis_message_context
 from utils.save_redis_message_context import save_redis_message_context 
 import json
 
-
 class Prompt(BaseModel):
     prompt: str
-
 
 # Initialize the cloud client outside the function so it can be reused
 ollama_cloud_client = AsyncClient(
     host="https://ollama.com",
     headers={'Authorization': f"Bearer {os.environ.get('OLLAMA_API_KEY')}"}
 )
-
 
 async def read_prompt(
     payload: Prompt,
